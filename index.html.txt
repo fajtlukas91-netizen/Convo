@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVO | Budoucnost vztahů</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Definice tmavších barev CONVO */
+        body { background-color: #063333; color: #ffffff; font-family: 'Inter', sans-serif; }
+        .bg-convo-teal-deep { background-color: #042424; }
+        .text-convo-orange { color: #f97316; }
+        .bg-convo-orange { background-color: #f97316; }
+        .border-convo-orange { border-color: #f97316; }
+        
+        .hover-orange:hover { background-color: #ea580c; transition: 0.3s; }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Navigace -->
+    <nav class="max-w-6xl mx-auto p-6 flex justify-between items-center">
+        <span class="text-3xl font-bold tracking-tighter">CONVO</span>
+        <a href="#register" class="text-sm border border-white/20 px-6 py-2 rounded-full hover:bg-white/10 transition">Přístup</a>
+    </nav>
+
+    <!-- Hero -->
+    <header class="text-center py-20 px-6">
+        <div class="inline-block px-4 py-1 mb-6 text-xs font-semibold tracking-widest uppercase border border-convo-orange rounded-full text-convo-orange">Verze 0.1 v aktivním vývoji</div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 max-w-4xl mx-auto leading-[1.1]">Konec swipování.<br><span class="text-convo-orange">Začátek skutečných vztahů.</span></h1>
+        <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">Digitální doba nám vzala hloubku. CONVO ji vrací zpět. Staň se součástí komunity, kde charakter vítězí nad fotkou.</p>
+        <a href="#register" class="bg-convo-orange px-10 py-4 rounded-full font-bold text-lg hover-orange shadow-xl shadow-orange-900/50">Chci být zakládajícím členem</a>
+    </header>
+
+    <!-- Jak to funguje -->
+    <section class="max-w-6xl mx-auto py-20 px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Jak funguje cesta CONVO</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="text-center p-8 bg-convo-teal-deep rounded-3xl border border-white/5">
+                <div class="w-16 h-16 bg-convo-orange rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
+                <h3 class="text-xl font-bold mb-4">Registrace identity</h3>
+                <p class="text-gray-300">Definuješ své hodnoty. Žádný katalog, ale tvůj osobní prostor.</p>
+            </div>
+            <div class="text-center p-8 bg-convo-teal-deep rounded-3xl border border-white/5">
+                <div class="w-16 h-16 bg-convo-orange rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
+                <h3 class="text-xl font-bold mb-4">Lucie – tvůj kouč</h3>
+                <p class="text-gray-300">Lucie není bot, ale tvůj mentor, který ti pomůže najít ta pravá slova.</p>
+            </div>
+            <div class="text-center p-8 bg-convo-teal-deep rounded-3xl border border-white/5">
+                <div class="w-16 h-16 bg-convo-orange rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
+                <h3 class="text-xl font-bold mb-4">Budování vztahu</h3>
+                <p class="text-gray-300">Komunikujete napřímo, bez šumu, v bezpečném šifrovaném prostředí.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section id="register" class="max-w-2xl mx-auto p-12 bg-convo-teal-deep rounded-3xl border border-white/10 mb-20">
+        <h2 class="text-3xl font-bold text-center mb-4">Buď u toho od začátku</h2>
+        <p class="text-center text-gray-300 mb-8">Počet míst v uzavřené betě je omezený.</p>
+        <form class="flex flex-col gap-5">
+            <input type="email" placeholder="Tvůj e-mail" class="w-full p-4 rounded-xl bg-[#063333] border border-white/10 outline-none focus:border-convo-orange transition">
+            <textarea placeholder="Proč chceš zkusit CONVO?" class="w-full p-4 rounded-xl bg-[#063333] border border-white/10 h-32 outline-none focus:border-convo-orange transition"></textarea>
+            <button type="submit" class="w-full bg-convo-orange py-4 rounded-xl font-bold hover-orange">Odeslat přihlášku</button>
+        </form>
+    </section>
+
+    <footer class="text-center py-10 text-white/50 text-sm">
+        &copy; 2026 CONVO Systems. Všechna práva vyhrazena.
+    </footer>
+</body>
+</html>
