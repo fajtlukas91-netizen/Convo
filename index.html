@@ -7,70 +7,110 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* Definice tmavších barev CONVO */
         body { background-color: #063333; color: #ffffff; font-family: 'Inter', sans-serif; }
         .bg-convo-teal-deep { background-color: #042424; }
         .text-convo-orange { color: #f97316; }
         .bg-convo-orange { background-color: #f97316; }
         .border-convo-orange { border-color: #f97316; }
-        
         .hover-orange:hover { background-color: #ea580c; transition: 0.3s; }
     </style>
 </head>
 <body class="leading-relaxed">
 
-    <!-- Navigace -->
-    <nav class="max-w-6xl mx-auto p-6 flex justify-between items-center">
-        <span class="text-3xl font-bold tracking-tighter">CONVO</span>
-        <a href="#register" class="text-sm border border-white/20 px-6 py-2 rounded-full hover:bg-white/10 transition">Přístup</a>
+    <!-- Hlavní menu -->
+    <nav class="fixed top-0 left-0 w-full p-6 flex justify-between items-center z-50 bg-[#063333]/90 backdrop-blur-md border-b border-white/5">
+        <div class="text-xl font-bold text-convo-orange tracking-widest">CONVO</div>
+        <div class="flex gap-6 items-center">
+            <a href="#about" class="text-white hover:text-convo-orange transition">O projektu</a>
+            <a href="#how" class="text-white hover:text-convo-orange transition">Jak funguje</a>
+            <a href="#register" class="bg-convo-orange px-5 py-2 rounded-xl text-black font-bold hover:opacity-90 transition">Registrace</a>
+        </div>
     </nav>
 
     <!-- Hero -->
-    <header class="text-center py-20 px-6">
-        <div class="inline-block px-4 py-1 mb-6 text-xs font-semibold tracking-widest uppercase border border-convo-orange rounded-full text-convo-orange">Verze 0.1 v aktivním vývoji</div>
+    <header class="text-center py-32 px-6">
+        <div class="inline-block px-4 py-1 mb-6 text-xs font-semibold tracking-widest uppercase border border-convo-orange rounded-full text-convo-orange">Beta verze 0.1.4 – Aktivně vyvíjíme</div>
         <h1 class="text-5xl md:text-7xl font-bold mb-8 max-w-4xl mx-auto leading-[1.1]">Konec swipování.<br><span class="text-convo-orange">Začátek skutečných vztahů.</span></h1>
-        <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">Digitální doba nám vzala hloubku. CONVO ji vrací zpět. Staň se součástí komunity, kde charakter vítězí nad fotkou.</p>
+        <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">Digitální doba nám vzala hloubku a nahradila ji rychlostí. CONVO vrací do seznamování smysl. Staň se součástí komunity, kde charakter vítězí nad fotkou a konverzace nad pouhým „like“.</p>
         <a href="#register" class="bg-convo-orange px-10 py-4 rounded-full font-bold text-lg hover-orange shadow-xl shadow-orange-900/50">Chci být zakládajícím členem</a>
     </header>
 
-    <!-- Jak to funguje -->
-    <section class="max-w-6xl mx-auto py-20 px-6">
+    <!-- O projektu -->
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Co je CONVO?</h2>
+        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+            Convo není jen další seznamka. Je to digitální ekosystém navržený pro lidi, kteří hledají víc než jen okamžitou pozornost. Věříme, že technologie by měla mezilidské vztahy posilovat, ne je degradovat na sérii rychlých voleb.
+        </p>
+        <p class="text-gray-300 text-lg leading-relaxed">
+            Naše platforma odstraňuje bariéry, které nám brání se skutečně poznat. Od digitálního šumu a nekonečného scrollování se vracíme k základům: upřímnosti, hodnotám a lidské zvědavosti.
+        </p>
+    </section>
+
+    <!-- Jak funguje -->
+    <section id="how" class="max-w-6xl mx-auto py-20 px-6">
         <h2 class="text-4xl font-bold text-center mb-16">Jak funguje cesta CONVO</h2>
         <div class="grid md:grid-cols-3 gap-12">
             <div class="text-center p-8 bg-convo-teal-deep rounded-3xl border border-white/5">
                 <div class="w-16 h-16 bg-convo-orange rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
                 <h3 class="text-xl font-bold mb-4">Registrace identity</h3>
-                <p class="text-gray-300">Definuješ své hodnoty. Žádný katalog, ale tvůj osobní prostor.</p>
+                <p class="text-gray-300">Nečekej profil jako z katalogu. U nás definuješ to, co je pro tebe důležité, čím žiješ a kam směřuješ. Budujeme tvůj prostor pro autenticitu.</p>
             </div>
             <div class="text-center p-8 bg-convo-teal-deep rounded-3xl border border-white/5">
                 <div class="w-16 h-16 bg-convo-orange rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
-                <h3 class="text-xl font-bold mb-4">Lucie – tvůj kouč</h3>
-                <p class="text-gray-300">Lucie není bot, ale tvůj mentor, který ti pomůže najít ta pravá slova.</p>
+                <h3 class="text-xl font-bold mb-4">Lucie – tvůj průvodce</h3>
+                <p class="text-gray-300">Lucie není jen další bot. Je to tvůj osobní mentor, který ti pomůže překonat úvodní rozpaky a najít slova, která nejlépe vyjádří tvou osobnost.</p>
             </div>
             <div class="text-center p-8 bg-convo-teal-deep rounded-3xl border border-white/5">
                 <div class="w-16 h-16 bg-convo-orange rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
                 <h3 class="text-xl font-bold mb-4">Budování vztahu</h3>
-                <p class="text-gray-300">Komunikujete napřímo, bez šumu, v bezpečném šifrovaném prostředí.</p>
+                <p class="text-gray-300">Komunikujete přímo, bez zbytečného šumu a algoritmů, které by vás chtěly rozptylovat. Máte bezpečné prostředí pro to, aby se rozvinul skutečný vztah.</p>
             </div>
         </div>
     </section>
 
-  <!-- Form -->
-    <section id="register" class="max-w-2xl mx-auto p-12 bg-convo-teal-deep rounded-3xl border border-white/10 mb-20">
+    <!-- Je CONVO pro tebe? -->
+    <section id="who" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Je CONVO pro tebe?</h2>
+            <div class="space-y-6">
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl font-bold text-convo-orange mb-3">Hledám kvalitu, ne kvantitu</h3>
+                    <p class="text-gray-300 text-lg">Už tě nebaví nekonečné swipování a povrchní konverzace? Hledáš prostor, kde charakter vítězí nad fotkou. U nás nehledáš další kontakt do seznamu, ale člověka, se kterým bude mít každé slovo svou váhu.</p>
+                </div>
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/5">
+                    <h3 class="text-2xl font-bold text-convo-orange mb-3">Cílevědomý charakter</h3>
+                    <p class="text-gray-300 text-lg">Víš, co od života a vztahu čekáš, a nepotřebuješ ztrácet čas hrami. S Lucií po boku najdeš cestu k lidem, kteří mají podobné hodnoty jako ty. Hledáš stabilitu, respekt a hloubku, kterou ostatní aplikace ignorují.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filozofie Lucie -->
+    <section id="lucie" class="py-20 px-6 bg-convo-teal-deep text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-convo-orange">Lucie: Tvůj mentor i digitální terapeut</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                Lucie není jen další bot. Působí jako tvůj osobní mentor a digitální terapeut, který ti pomáhá pracovat s tvými emocemi a komunikačními vzorci. Pomůže ti pochopit, co od druhých skutečně potřebuješ a co nabízíš ty sám.
+            </p>
+            <p class="text-gray-300 text-lg leading-relaxed">
+                Je to tvůj bezpečný prostor pro trénink komunikace, odbourání strachu z odmítnutí a postupné budování sebevědomí, které ti pomůže v autentických vztazích mimo digitální svět.
+            </p>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section id="register" class="max-w-2xl mx-auto p-12 bg-convo-teal-deep rounded-3xl border border-white/10 my-20">
         <h2 class="text-3xl font-bold text-center mb-4">Buď u toho od začátku</h2>
-        <p class="text-center text-gray-300 mb-8">Počet míst v uzavřené betě je omezený.</p>
+        <p class="text-center text-gray-300 mb-8">Počet míst v naší uzavřené betě je záměrně omezený, abychom udrželi kvalitu komunity.</p>
         
-        <!-- Tady je přidané action a method -->
         <form action="https://formspree.io/f/mjgdybbw" method="POST" class="flex flex-col gap-5">
-            
-            <!-- Tady je přidané name="email" -->
             <input type="email" name="email" placeholder="Tvůj e-mail" required class="w-full p-4 rounded-xl bg-[#063333] border border-white/10 outline-none focus:border-convo-orange transition">
-            
-            <!-- Tady je přidané name="message" -->
             <textarea name="message" placeholder="Proč chceš zkusit CONVO?" class="w-full p-4 rounded-xl bg-[#063333] border border-white/10 h-32 outline-none focus:border-convo-orange transition"></textarea>
-            
             <button type="submit" class="w-full bg-convo-orange py-4 rounded-xl font-bold hover-orange">Odeslat přihlášku</button>
         </form>
+        <p class="text-sm text-gray-400 italic text-center mt-6">
+            Jako zakládající člen bety máš přímý vliv na vývoj CONVO. Tvá zpětná vazba a zkušenosti budou přímo určovat, jaké funkce a nástroje budeme vyvíjet dál.
+        </p>
     </section>
 
     <footer class="text-center py-10 text-white/50 text-sm">
