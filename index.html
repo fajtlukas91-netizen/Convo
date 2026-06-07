@@ -106,6 +106,9 @@
         <p class="text-center text-gray-300 mb-6 text-sm">Počet míst v naší uzavřené betě je záměrně omezený, abychom udrželi kvalitu komunity.</p>
         
         <form action="https://formspree.io/f/mjgdybbw" method="POST" class="flex flex-col gap-4">
+            <!-- TOTO JE PŘIDANÉ POLE PRO PŘESMĚROVÁNÍ -->
+            <input type="hidden" name="_next" value="https://convo-ruby.vercel.app">
+            
             <input type="email" name="email" placeholder="Tvůj e-mail" required class="w-full p-3 rounded-lg bg-[#063333] border border-white/10 outline-none focus:border-convo-orange">
             <textarea name="message" placeholder="Proč chceš zkusit CONVO?" class="w-full p-3 rounded-lg bg-[#063333] border border-white/10 h-24 outline-none focus:border-convo-orange"></textarea>
             <button type="submit" class="w-full bg-convo-orange py-3 rounded-lg font-bold hover-orange">Odeslat přihlášku</button>
